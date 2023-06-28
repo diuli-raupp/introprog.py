@@ -7,38 +7,8 @@ except:
 num2 += 1
 soma = 0
 
-if num1 > 0 and num2 > 0:
-    if num1 > num2:
-        for item in range (num2, num1):
-            soma = soma + item
-    if num2 > num1:
-        for item in range (num1, num2):
-            soma = soma + item
-elif num1 < 0 and num2 < 0:
-    if num1 > num2:
-        for item in range (num2, num1):
-            soma = soma + item
-    if num2 > num1:
-        for item in range (num1, num2):
-            soma = soma + item
-elif num1 < 0 and num2 > 0:
-        for item in range (num1, num2):
-            soma = soma + item
-elif num1 > 0 and num2 < 0:
-        for item in range (num2, num1):
-            soma = soma + item          
-elif num1 == 0 and num2 < 0:
-    for item in range (num2, num1):
-            soma = soma + item
-elif num1 == 0 and num2 > 0:
-    for item in range (num1, num2):
-            soma = soma + item
-elif num2 == 0 and num2 < 0:
-    for item in range (num2, num2):
-            soma = soma + item
-elif num2 == 0 and num1 > 0:
-    for item in range (num2, num1):
-            soma = soma + item
+for item in range (num2, num1):
+    soma = soma + item
 
 if soma % 2 == 0:
     num2 -= 1
