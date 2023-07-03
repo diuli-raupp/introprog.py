@@ -25,4 +25,6 @@ import datetime
 
 massa = float(input())
 meia_vida = int(input())
-tempo = input().split(" ")
+horas, minutos, segundos = input().split(" ")
+
+#while
