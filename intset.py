@@ -1,36 +1,34 @@
 class IntSet:
 
-    def __init__(self, numero):
+    def __init__(self):
         self.vals = []
-        self.numero = numero
 
-    def func(self):
-        if self.numero in self.vals:
+    def func(self, numero):
+        if numero in self.vals:
             pass
         else:
-            (self.vals).append(self.numero)
+            (self.vals).append(numero)
     
-    def isNumber(self):
+    def isNumber(self, numero):
         try:
-            int(self.numero)
+            int(numero)
         except Exception:
             return False
         else:
             return True
-        return isNumber
-    
+
     def func2(self):
         print("Conjunto de inteiros:")
         print(self.vals)
     
 algarismo = input()
-variavel = IntSet(algarismo)
-if variavel.isNumber():
-    variavel.func()
+variavel = IntSet()
+if variavel.isNumber(algarismo):
+    variavel.func(algarismo)
 
 while algarismo != "sair":
     algarismo = input()
     if algarismo == "sair":
         variavel.func2()
-    if variavel.isNumber():
-        variavel.func()
+    if variavel.isNumber(algarismo):
+        variavel.func(algarismo)
